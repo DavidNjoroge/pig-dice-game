@@ -16,15 +16,15 @@ Players.prototype.roll = function() {
   console.log(num);
   $('#diceNum').text(num);
   if (num === 1) {
-    $('.dis1').hide();
-    $('.dis2').show();
+    runn()
     return this.total = 0
   }
   return this.total
 }
 //function
 var runn = function() {
-
+  $('.dis1').hide();
+  $('.dis2').show();
 
 }
 
@@ -41,15 +41,21 @@ $(document).ready(function() {
     $('#name1').text(p1.name);
     $('#name2').text(p2.name);
     $('#total1').text(p1.total);
-    totl = p2.total
+    $('#total2').text(p2.total);
+    totl = p1.total
 
     $('.dis1').show();
     //roll button
   });
   $('#roll').click(function(event) {
 
+    p1.roll()
+    console.log(p1.total);
+    $('#total1').text(p1.total);
+  });
+  $('#roll2').click(function(event) {
     p2.roll()
+    $('#total2').text(p2.total);
     console.log(p2.total);
-    $('#total1').text(p2.total);
   });
 });

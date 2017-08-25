@@ -11,14 +11,21 @@ var dice = function() {
 
 //roll prototype
 Players.prototype.roll = function() {
-  var num = dice()
+  num = dice()
   this.total += num
   console.log(num);
+  $('#diceNum').text(num);
+  if (num === 1) {
+    $('.dis1').hide();
+    $('.dis2').show();
+    return this.total = 0
+  }
+  return this.total
 }
 //function
 var runn = function() {
-  p1.roll()
-  alert('tet')
+
+
 }
 
 //user interface
@@ -34,12 +41,15 @@ $(document).ready(function() {
     $('#name1').text(p1.name);
     $('#name2').text(p2.name);
     $('#total1').text(p1.total);
-    $('#total2').text(p2.total);
+    totl = p2.total
+
+    $('.dis1').show();
     //roll button
   });
   $('#roll').click(function(event) {
 
     p2.roll()
-
+    console.log(p2.total);
+    $('#total1').text(p2.total);
   });
 });

@@ -9,3 +9,7 @@
 .centr {
   text-align: center;
 }
+
+.dis1, .dis2 {
+  display: none;
+}

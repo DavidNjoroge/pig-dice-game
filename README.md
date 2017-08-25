@@ -12,6 +12,13 @@ if the dice lands on between 2 and 6 it is added to your total and you can choos
 * Clone the repo or open the deploy site https://davidnjoroge.github.io/pig-dice-game/
 * have fun
 
+
+## Specifications for the BDD
+* should collect the first and second players name
+* should add the dice with random input from 1 to 6 and the dice should modify the total
+* if the dice lands on 1 it should reset the total to 0
+* if dice is between 2-6 it should add to the total
+
 ## Technologies Used
 
 the app uses html css and bootstrap for styling and javascript and jquery for logic

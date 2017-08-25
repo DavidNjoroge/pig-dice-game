@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pig Dice</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>PIG TAIL DICE</h1>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form>
+            <div class="form-group">
+              <label for="firstplayer">First Player</label>
+              <input type="text" class="form-control" id="fPlayer" placeholder="name">
+            </div>
+            <div class="form-group">
+              <label for="secondplayer">Second Player</label>
+              <input type="text" class="form-control" id="sPlayer" placeholder="name">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4 centr">
+          <button type="button" class="btn btn-lg btn-primary">START!</button>
+          <h4>DICE</h4>
+          <h3 id="diceNum">6</h3>
+        </div>
+      </div>
+      <div class="row main">
+        <div class="col-md-6 bord">
+          <h4 class="pad">NAME:</h4>
+          <h5 class="pad">TOTAL:</h5>
+          <button type="button" class="btn btn-lg btn-success">ROLL</button>
+          <button type="button" class="btn btn-lg btn-danger">HOLD</button>
+        </div>
+        <div class="col-md-6">
+          <h4 class="pad">NAME:</h4>
+          <h5 class="pad">TOTAL:</h5>
+          <button type="button" class="btn btn-lg btn-success">ROLL</button>
+          <button type="button" class="btn btn-lg btn-danger">HOLD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

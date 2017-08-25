@@ -1,0 +1,11 @@
+.bord {
+  border-right: 1px solid black;
+}
+
+.pad {
+  padding-bottom: 50px;
+}
+
+.centr {
+  text-align: center;
+}
